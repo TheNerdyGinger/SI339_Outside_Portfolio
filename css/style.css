@@ -1,1 +1,39 @@
-/* This is our main stylesheet */
+  /* This is our main stylesheet */
+  /* Mobile view*/
+  #michaelanne_home_img{
+    width: 50vw;
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 0.75em;
+}
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 1.7;
+  margin-bottom: 1.5em;
+  text-rendering: optimizeLegibility;
+}
+  /* Tablet */
+@media screen and (min-width: 700px){
+  #michaelanne_home_img{
+    max-width: 150px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 900px){
+
+}
+
+/* Reduce motion */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+}
