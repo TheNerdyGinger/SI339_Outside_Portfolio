@@ -1,0 +1,58 @@
+/* This is our main stylesheet */
+/* Mobile view*/
+#home-page{
+  margin:1em;
+}
+#michaelanne_home_img{
+  width: 40vw;
+  display: inline;
+  float: left;
+  margin-right: 1.25em;
+  /* margin-left: 1.25em; */
+  margin-bottom: 0.1em;
+}
+.home-content p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.7;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+  text-rendering: optimizeLegibility;
+}
+#twitter_div{
+  margin-left: 1em;
+}
+
+/* Tablet */
+@media screen and (min-width: 700px){
+  #michaelanne_home_img{
+    max-width: 150px;
+  }
+  .home-content{
+    display:grid;
+  }
+  #home-paragraphs{
+    grid-column: 1/ span 1;
+  }
+  #twitter_div{
+    grid-column: 2/span 1;
+  }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 900px){
+
+
+/* Reduce motion */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+}
