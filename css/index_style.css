@@ -2,6 +2,7 @@
 /* Mobile view*/
 #home-page{
   margin:1em;
+  font-family: "Open Sans", serif;
 }
 #michaelanne_home_img{
   width: 40vw;
@@ -17,13 +18,14 @@
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-family: inherit;
+
   font-weight: normal;
   font-size: 1.2em;
   line-height: 1.7;
   margin-bottom: 1.5em;
   margin-left: 1em;
   text-rendering: optimizeLegibility;
+
 }
 #twitter_div{
   margin-left: 1em;
