@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
 		<!-- ADD HEAD STUFF -->
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index_style.css">
+
     <meta name = 'viewport' content='width=device-width, initial-scale=1'>
   </head>
 <body>
 
-<div id="page" class="hfeed site">
+<div id="home-page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
 	<div class="header-bg">
@@ -27,7 +30,7 @@
 				<ul id="nav-list" class="nav-menu" aria-expanded="false">
 					<li id="home" class = "current"><a href="index.html" aria-current="page">Home</a></li>
 					<li id="about me"><a href="aboutmich.html">About Me</a></li>
-					<li id="cv"><a target="_blank" rel="noopener noreferrer" href="https://michaelannedye.files.wordpress.com/2019/01/michaelannedye_cv_2019.pdf">CV</a></li>
+					<li id="cv"><a target="_blank" rel="noopener noreferrer" href="uploads/michaelannedye_cv_2019.pdf">CV</a></li>
 					<li id="publications"><a href="publications.html">Publications</a></li>
 					<li id="selected press"><a href="selected_press.html">Selected Press</a></li>
 					<li id="contact"><a href="contactmich.html">Contact</a></li>
@@ -47,33 +50,31 @@
 
 
 
-<article id="post-1" class="post-1 page type-page status-publish hentry">
-
 	<header class="entry-header">
 		<h2 class="entry-title">Home</h2>	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-
-		<p><img id = "michaelanne_home_img"src = "images/michaelanne.jpg" alt = "Photo of Michaelanne Dye">
-			I am a Presidential Postdoctoral Fellow at the University of Michigan’s School of Information.&nbsp;
-			My work draws on the fields of Anthropology, CSCW (Computer Supported Cooperative Work), and ICTD
-			(Information Communication Technologies &amp; Development) to study how people collaboratively access and participate with internet technologies in
-			constrained contexts.</p>
-		<p>Drawing on my training as a sociocultural anthropologist, my work focuses on underserved groups to investigate (1) internet access in
-			resource-constrained regions; (2) the design of citizen-led information systems; and (3) social media use for social change.</p>
-		<p>Read more about me <a href="about.html">here</a>.</p>
+	<div class="home-content">
+    <div id = "home-paragraphs">
+  		<p><img id = "michaelanne_home_img"src = "images/michaelanne.jpg" alt = "Photo of Michaelanne Dye">
+  			I am a Presidential Postdoctoral Fellow at the University of Michigan’s School of Information.&nbsp;
+  			My work draws on the fields of Anthropology, CSCW (Computer Supported Cooperative Work), and ICTD
+  			(Information Communication Technologies &amp; Development) to study how people collaboratively access and participate with internet technologies in
+  			constrained contexts.</p>
+  		<p>Drawing on my training as a sociocultural anthropologist, my work focuses on underserved groups to investigate (1) internet access in
+  			resource-constrained regions; (2) the design of citizen-led information systems; and (3) social media use for social change.</p>
+  		<p>Read more about me <a href="aboutmich.html">here</a>.</p>
+    </div> <!-- home-paragraphs -->
+    <div id="twitter_div" class="widget-area" role="complementary">
+      <!-- Twitter stream -->
+    	<a class="twitter-timeline" data-lang="en" data-width="300" data-height="500" data-theme="dark" href="https://twitter.com/michaelannedye?ref_src=twsrc%5Etfw">Tweets by michaelannedye</a>
+    	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div><!-- #twitter_div -->
 	</div><!-- .entry-content -->
-</article><!-- #post-## -->
-
 	</main><!-- #main -->
 
 </div><!-- #primary -->
 
-<div id="twitter_div" class="widget-area" role="complementary">
-  <!-- Twitter stream -->
-	<a class="twitter-timeline" data-lang="en" data-width="300" data-height="900" data-theme="dark" href="https://twitter.com/michaelannedye?ref_src=twsrc%5Etfw">Tweets by michaelannedye</a>
-	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div><!-- #secondary -->
+
 
 	</div><!-- #content -->
 
