@@ -35,4 +35,9 @@
   html{
       scroll-behavior: auto; /* Removes scroll animation */
   }
+  .skip a{
+    -webkit-transition: default;
+    transition: default;
+  }
+
 }
