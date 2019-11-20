@@ -1,0 +1,56 @@
+/* This is our main stylesheet */
+/* Mobile view*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html{
+    scroll-behavior: smooth;
+}
+h1{
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+  color: #004E89;
+
+}
+
+h2{
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+  color: #004E89;
+
+}
+p{
+  font-family: Open Sans, sans-serif;
+  color: #004E89;
+
+}
+body{
+  background-color: #EFEFD0;
+
+}
+
+
+
+/* Tablet */
+@media screen and (min-width: 700px){
+  #michaelanne_home_img{
+    max-width: 150px;
+  }
+  .home-content{
+    display:grid;
+  }
+  #home-paragraphs{
+    grid-column: 1/ span 1;
+  }
+
+
+}
+
+/* Desktop */
+@media screen and (min-width: 900px){
+
+
+/* Reduce motion */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+}
