@@ -1,24 +1,23 @@
   /* This is our main stylesheet */
   /* Mobile view*/
-  #michaelanne_home_img{
-    width: 50vw;
-    display: inline;
-    float: left;
-    margin-right: 1.5em;
-    margin-bottom: 0.75em;
-}
-p{
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-family: inherit;
-  font-weight: normal;
-  line-height: 1.7;
-  margin-bottom: 1.5em;
-  text-rendering: optimizeLegibility;
-}
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top:-40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+  *:focus{
+    border: solid 2px red;
+  }
   /* Tablet */
 @media screen and (min-width: 700px){
   #michaelanne_home_img{
@@ -36,4 +35,9 @@ p{
   html{
       scroll-behavior: auto; /* Removes scroll animation */
   }
+  .skip a{
+    -webkit-transition: default;
+    transition: default;
+  }
+
 }
