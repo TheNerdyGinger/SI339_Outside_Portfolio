@@ -4,13 +4,14 @@ body{
   color: #004e89;
   background-color: #EFEFD0;
 }
-#home-page{
+
+.home-page{
   margin:1em;
   font-family: "Open Sans", serif;
 
 }
 #michaelanne_home_img{
-  width: 40vw;
+  width: 35vw;
   display: inline;
   float: left;
   margin-right: 1.25em;
@@ -28,13 +29,25 @@ body{
   font-size: 1.2em;
   line-height: 1.7;
   margin-bottom: 1.5em;
-  margin-left: 1em;
+  margin-left: .5em;
+  margin-right:.5em;
   text-rendering: optimizeLegibility;
 
 }
-#twitter_div{
-  margin-left: 1em;
+.twitter_div{
+  margin-left: .5em;
+  margin-right:.5em;
 }
+#twitter-mobile{
+  display:block;
+}
+#twitter-tablet{
+  display:none;
+}
+#twitter-desktop{
+  display:none;
+}
+
 
 /* Tablet */
 @media screen and (min-width: 700px){
@@ -47,16 +60,33 @@ body{
   #home-paragraphs{
     grid-column: 1/ span 1;
   }
-  #twitter_div{
+  .twitter_div{
     grid-column: 2/span 1;
+  }
+  #twitter-mobile{
+    display:none;
+  }
+  #twitter-tablet{
+    display:block;
+  }
+  #twitter-desktop{
+    display:none;
   }
 
 }
 
 /* Desktop */
 @media screen and (min-width: 900px){
-
-
+  #twitter-mobile{
+    display:none;
+  }
+  #twitter-tablet{
+    display:none;
+  }
+  #twitter-desktop{
+    display:block;
+  }
+}
 /* Reduce motion */
 @media screen and (prefers-reduced-motion: reduce){
   html{

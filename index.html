@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <head>
 		<!-- ADD HEAD STUFF -->
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
@@ -11,7 +12,7 @@
   </head>
 <body>
 
-<div id="home-page" class="hfeed site">
+<div class="home-page">
 	<div class="skip"><a  href="#content">Skip to content</a></div>
 
 	<div class="header-bg">
@@ -65,12 +66,31 @@
   			resource-constrained regions; (2) the design of citizen-led information systems; and (3) social media use for social change.</p>
   		<p>Read more about me <a href="aboutmich.html">here</a>.</p>
     </div> <!-- home-paragraphs -->
-    <div tabindex='-10' id="twitter_div" class="widget-area" role="complementary">
+
+    <div id = "twitter-mobile"  class="twitter_div" role="complementary">
       <!-- Twitter stream -->
-    	<a class="twitter-timeline" tabindex='-10' data-lang="en" data-width="300" data-height="500" data-theme="dark"
-      href="https://twitter.com/michaelannedye?ref_src=twsrc%5Etfw" aria-label="Start of twitter timeline">Tweets by michaelannedye</a>
+    	<a class="twitter-timeline" data-lang="en"  data-height="500" data-theme="light"
+      href="https://twitter.com/michaelannedye?ref_src=twsrc%5Etfw"
+      aria-label="Start of twitter timeline">Tweets by michaelannedye</a>
     	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div><!-- #twitter_div -->
+    </div><!-- #twitter_mobile -->
+
+    <div id = "twitter-tablet"  class="twitter_div" role="complementary">
+      <!-- Twitter stream -->
+      <a class="twitter-timeline" data-lang="en"  data-height="700" data-theme="light"
+      href="https://twitter.com/michaelannedye?ref_src=twsrc%5Etfw"
+      aria-label="Start of twitter timeline">Tweets by michaelannedye</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div><!-- #twitter_tablet -->
+
+    <div id = "twitter-desktop"  class="twitter_div" role="complementary">
+      <!-- Twitter stream -->
+      <a class="twitter-timeline" data-lang="en"  data-height="450" data-theme="light"
+      href="https://twitter.com/michaelannedye?ref_src=twsrc%5Etfw"
+      aria-label="Start of twitter timeline">Tweets by michaelannedye</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div><!-- #twitter_desktop -->
+
 	</div><!-- .entry-content -->
 	</main><!-- #main -->
 
@@ -80,16 +100,24 @@
 
 	</div><!-- #content -->
 
-	<div class="footer-wrap clear">
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			FOOTER<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 
-		</footer><!-- #colophon -->
+</div><!-- #home-page -->
+<div class="footer-wrap clear">
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    FOOTER<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 
-	</div><!-- .footer-wrap -->
+  </footer><!-- #colophon -->
+</div><!-- .footer-wrap -->
+<!-- <script>
+  var twit = $(".twitter-timeline")
+  window.addEventListener("resize", function(){
 
-</div><!-- #page -->
-
+    if($(window).width() < 700){
+      console.log("resize")
+      twit.attr('data-width', '200px')
+    }
+  });
+</script> -->
 </body>
 </html>

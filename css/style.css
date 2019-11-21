@@ -18,7 +18,13 @@
   *:focus{
     border: solid 2px red;
   }
+  footer{
+    background-color: #004e89;
+    color: #EFEFD0;
+    min-height: 60px;
+  }
   /* Tablet */
+
 @media screen and (min-width: 700px){
   #michaelanne_home_img{
     max-width: 150px;
