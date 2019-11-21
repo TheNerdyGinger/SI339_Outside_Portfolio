@@ -1,0 +1,36 @@
+/* This is our main stylesheet */
+/* Mobile view*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+  background-color: black;
+}
+
+/* Tablet */
+@media screen and (min-width: 700px){
+  #michaelanne_home_img{
+    max-width: 150px;
+  }
+  .home-content{
+    display:grid;
+  }
+  #home-paragraphs{
+    grid-column: 1/ span 1;
+  }
+
+
+}
+
+/* Desktop */
+@media screen and (min-width: 900px){
+
+
+/* Reduce motion */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+}
