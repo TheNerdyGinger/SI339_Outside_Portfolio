@@ -1,8 +1,13 @@
 /* This is our main stylesheet */
 /* Mobile view*/
+body{
+  color: #004e89;
+  background-color: #EFEFD0;
+}
 #home-page{
   margin:1em;
   font-family: "Open Sans", serif;
+
 }
 #michaelanne_home_img{
   width: 40vw;
