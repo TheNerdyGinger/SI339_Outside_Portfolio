@@ -20,22 +20,29 @@ h2{
   margin-top: 40px;
 
 }
-p{
-  font-family: Open Sans, sans-serif;
-  color: #004E89;
-}
+
 body{
   background-color: #EFEFD0;
   margin-top: 40px;
 
 }
+
 .container {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 15px;
-  display: grid;
-  grid-template-rows: 30px auto auto auto auto auto 100px;
-
+  grid-template-rows: 30px auto auto 100px;
 }
+p{
+  font-family: Open Sans, sans-serif;
+  color: #004E89;
+}
+.wedding-image{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  overflow: hidden;
+}
+
 
 
 /* Tablet */
