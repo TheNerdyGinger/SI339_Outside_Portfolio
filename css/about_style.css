@@ -27,23 +27,64 @@ body{
 
 }
 
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 15px;
-  grid-template-rows: 30px auto auto 100px;
+  grid-template-rows: 30px auto auto auto auto auto auto auto auto 100px;
 }
 p{
   font-family: Open Sans, sans-serif;
   color: #004E89;
+  padding: 20px;
+  line-height: normal;
 }
 .wedding-image{
+  grid-column: 2/4;
+  grid-row: 4/5;
+  /* overflow: hidden; */
+}
+.newstext{
+  grid-column: 1/-1;
+  grid-row: 8/9;
+}
+.abouttext{
+  grid-column: 1/-1;
+  grid-row: 7/8;
+}
+/* .newstitle{
   grid-column: 2/3;
-  grid-row: 2/3;
-  overflow: hidden;
+  grid-row: 9/10;
+} */
+
+.aboutme{
+  grid-column: 2/4;
+  grid-row: 3/4;
 }
 
+.site-title{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
 
+.site-description{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+.textbox2{
+  background-color: #F7C59F;
+  opacity: .65;
+  text-align: left;
+  border: 20px solid #1A659E;
+}
+.textbox3{
+  background-color: #F7C59F;
+  opacity: .65;
+  text-align: center;
+  border: 8px solid #1A659E;
+}
 
 /* Tablet */
 @media screen and (min-width: 700px){
