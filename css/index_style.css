@@ -4,7 +4,10 @@ body{
   color: #004e89;
   background-color: #EFEFD0;
 }
-
+.entry-title{
+  font-size: 3rem;
+  margin-top: 10px;
+}
 .home-page{
   margin:1em;
   font-family: "Open Sans", serif;
@@ -32,8 +35,29 @@ body{
   margin-left: .5em;
   margin-right:.5em;
   text-rendering: optimizeLegibility;
-
 }
+.skip_t a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top:-40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  width: 150px;
+}
+
+.skip_t a:focus{
+  top:40px;
+}
+.skip_t{
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top:-40px;
+}
+
 .twitter_div{
   margin-left: .5em;
   margin-right:.5em;
@@ -63,6 +87,7 @@ body{
   .twitter_div{
     grid-column: 2/span 1;
   }
+
   #twitter-mobile{
     display:none;
   }
@@ -91,5 +116,9 @@ body{
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto; /* Removes scroll animation */
+  }
+  .skip_t a{
+    -webkit-transition: default;
+    transition: default;
   }
 }
