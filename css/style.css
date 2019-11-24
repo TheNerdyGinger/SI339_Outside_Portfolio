@@ -18,10 +18,44 @@
   *:focus{
     border: solid 2px red;
   }
+  footer{
+    background-color: #004e89;
+    color: #EFEFD0;
+    min-height:80px;
+    font-family: "Open Sans", serif;
+
+  }
+  .page{
+    min-height: calc(100vh - 100px);
+  }
+  #footer_div{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    grid-column-gap: 5px;
+    align-items: center;
+  }
+  .footer_info{
+    justify-self: left;
+    align-self: center;
+  }
+  footer img{
+    margin-top:5px;
+    margin-bottom:5px;
+    width: 50px;
+    justify-self: center;
+  }
+  a, a:visited{
+    color: inherit;
+  }
   /* Tablet */
+
 @media screen and (min-width: 700px){
-  #michaelanne_home_img{
-    max-width: 150px;
+  #footer_div{
+    grid-template-rows: 1fr;
+    min-height:80px;
+    grid-template-columns: auto auto auto auto auto auto;
   }
 }
 
