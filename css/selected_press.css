@@ -1,0 +1,146 @@
+/* about page stylesheet */
+/* Mobile view*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html{
+    scroll-behavior: smooth;
+}
+h1{
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+  color: #004E89;
+  font-size: 32px;
+
+}
+
+h2{
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+  color: #004E89;
+  font-size: 28px;
+  margin-top: 40px;
+
+}
+#footer_div{
+  grid-column: 1/-1;
+  grid-row: 10/auto;
+}
+
+body{
+  background-color: #EFEFD0;
+  margin-top: 40px;
+
+}
+a {
+  color: #FF6B35;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 15px;
+  grid-template-rows: 30px auto auto auto auto auto auto auto auto 100px;
+}
+p{
+  font-family: Open Sans, sans-serif;
+  color: #004E89;
+  padding: 20px;
+  line-height: normal;
+  font-size: 1.2em;
+}
+
+.wedding-image{
+  grid-column: 2/4;
+  grid-row: 4/5;
+
+}
+.newstext{
+  grid-column: 1/-1;
+  grid-row: 9/10;
+}
+.abouttext{
+  grid-column: 1/-1;
+  grid-row: 7/8;
+}
+.newstitle{
+  grid-column: 2/4;
+  grid-row: 8/9;
+}
+
+.aboutme{
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.site-title{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.site-description{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+.textbox2{
+  background-color: #F7C59F;
+  opacity: .65;
+  text-align: left;
+  border: 20px solid #1A659E;
+}
+.textbox3{
+  background-color: #F7C59F;
+  opacity: .65;
+  text-align: center;
+  border: 8px solid #1A659E;
+}
+
+/* Tablet */
+@media screen and (min-width: 700px){
+  #michaelanne_home_img{
+    max-width: 150px;
+  }
+  .home-content{
+    display:grid;
+  }
+  #home-paragraphs{
+    grid-column: 1/ span 1;
+  }
+
+
+}
+
+/* Desktop */
+@media screen and (min-width: 900px){
+  .wedding-image{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-left: 60px;
+    margin-top: 25px;
+
+  }
+  .newstitle{
+    grid-column: 2/4;
+    grid-row: 8/9;
+  }
+
+  .newstext{
+    grid-column: 1/4;
+    grid-row: 9/10;
+    margin-left: 60px;
+  }
+  .abouttext{
+    grid-column: 2/5;
+    grid-row: 4/5;
+    margin-right: 40px;
+  }
+
+}
+
+/* Reduce motion */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+}
