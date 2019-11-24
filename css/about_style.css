@@ -20,12 +20,20 @@ h2{
   margin-top: 40px;
 
 }
+#footer_div{
+  grid-column: 1/-1;
+  grid-row: 10/auto;
+}
 
 body{
   background-color: #EFEFD0;
   margin-top: 40px;
 
 }
+a {
+  color: #FF6B35;
+}
+
 
 
 .container {
@@ -39,24 +47,26 @@ p{
   color: #004E89;
   padding: 20px;
   line-height: normal;
+  font-size: 1.2em;
 }
+
 .wedding-image{
   grid-column: 2/4;
   grid-row: 4/5;
-  /* overflow: hidden; */
+
 }
 .newstext{
   grid-column: 1/-1;
-  grid-row: 8/9;
+  grid-row: 9/10;
 }
 .abouttext{
   grid-column: 1/-1;
   grid-row: 7/8;
 }
-/* .newstitle{
-  grid-column: 2/3;
-  grid-row: 9/10;
-} */
+.newstitle{
+  grid-column: 2/4;
+  grid-row: 8/9;
+}
 
 .aboutme{
   grid-column: 2/4;
@@ -103,7 +113,30 @@ p{
 
 /* Desktop */
 @media screen and (min-width: 900px){
+  .wedding-image{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-left: 60px;
+    margin-top: 25px;
 
+  }
+  .newstitle{
+    grid-column: 2/4;
+    grid-row: 8/9;
+  }
+
+  .newstext{
+    grid-column: 1/4;
+    grid-row: 9/10;
+    margin-left: 60px;
+  }
+  .abouttext{
+    grid-column: 2/5;
+    grid-row: 4/5;
+    margin-right: 40px;
+  }
+
+}
 
 /* Reduce motion */
 @media screen and (prefers-reduced-motion: reduce){
