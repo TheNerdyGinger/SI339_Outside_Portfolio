@@ -50,29 +50,11 @@ p{
   font-size: 1.2em;
 }
 
-.wedding-image{
-  grid-column: 2/4;
-  grid-row: 4/5;
 
-}
-.newstext{
+.presstext{
   grid-column: 1/-1;
-  grid-row: 9/10;
-}
-.abouttext{
-  grid-column: 1/-1;
-  grid-row: 7/8;
-}
-.newstitle{
-  grid-column: 2/4;
   grid-row: 8/9;
 }
-
-.aboutme{
-  grid-column: 2/4;
-  grid-row: 3/4;
-}
-
 .site-title{
   grid-column: 1/-1;
   grid-row: 1/2;
@@ -82,19 +64,11 @@ p{
   grid-column: 1/-1;
   grid-row: 2/3;
 }
+.selectedtitle{
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
 
-.textbox2{
-  background-color: #F7C59F;
-  opacity: .65;
-  text-align: left;
-  border: 20px solid #1A659E;
-}
-.textbox3{
-  background-color: #F7C59F;
-  opacity: .65;
-  text-align: center;
-  border: 8px solid #1A659E;
-}
 
 /* Tablet */
 @media screen and (min-width: 700px){
@@ -113,27 +87,9 @@ p{
 
 /* Desktop */
 @media screen and (min-width: 900px){
-  .wedding-image{
-    grid-column: 1/2;
-    grid-row: 4/5;
-    margin-left: 60px;
-    margin-top: 25px;
-
-  }
-  .newstitle{
+  .presstext{
     grid-column: 2/4;
-    grid-row: 8/9;
-  }
-
-  .newstext{
-    grid-column: 1/4;
     grid-row: 9/10;
-    margin-left: 60px;
-  }
-  .abouttext{
-    grid-column: 2/5;
-    grid-row: 4/5;
-    margin-right: 40px;
   }
 
 }
