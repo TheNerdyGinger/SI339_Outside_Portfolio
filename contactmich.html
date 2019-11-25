@@ -1,15 +1,32 @@
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="https://michaelannedye.com/xmlrpc.php">
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" tyoe-"text/css" href="css/contact_style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 
 <title>Contact – Michaelanne Dye</title>
+</head>
 
 <body class="page-template-default page page-id-68 customizer-styles-applied highlander-enabled highlander-light">
+	<a class="skip" href="#content">Skip to content</a>
+	<div class="stick">
 
+		<nav id="site-navigation" class="main-navigation clear" role="navigation">
+			<div class="nav-container">
+			<ul id="nav-list" class="nav-menu" aria-expanded="false">
+				<li id="home"><a href="index.html" aria-current="page">Home</a></li>
+				<li id="about me"><a href="aboutmich.html">About Me</a></li>
+				<li id="cv"><a target="_blank" rel="noopener noreferrer" href="https://michaelannedye.files.wordpress.com/2019/01/michaelannedye_cv_2019.pdf">CV</a></li>
+				<li id="publications"><a href="publications.html">Publications</a></li>
+				<li id="selected press"><a href="selected_press.html">Selected Press</a></li>
+				<li id="contact" class = "current"><a href="contactmich.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	</div><!-- .sticky -->
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
 	<div class="header-bg">
 		<div class="site-branding">
@@ -23,24 +40,6 @@
 	</div><!-- .header-bg -->
 
 	<header id="masthead" class="site-header" role="banner">
-
-		<div class="stick">
-
-			<nav id="site-navigation" class="main-navigation clear" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
-				<div class="nav-container">
-				<ul id="nav-list" class="nav-menu" aria-expanded="false">
-					<li id="home" class = "current"><a href="index.html" aria-current="page">Home</a></li>
-					<li id="about me"><a href="aboutmich.html">About Me</a></li>
-					<li id="cv"><a target="_blank" rel="noopener noreferrer" href="https://michaelannedye.files.wordpress.com/2019/01/michaelannedye_cv_2019.pdf">CV</a></li>
-					<li id="publications"><a href="publications.html">Publications</a></li>
-					<li id="selected press"><a href="selected_press.html">Selected Press</a></li>
-					<li id="contact"><a href="contactmich.html">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-
-		</div><!-- .sticky -->
 
 	</header><!-- .row #masthead -->
 
@@ -71,6 +70,28 @@ Ann Arbor, MI 48109</p>
 <p>View my LinkedIn profile <a href="https://www.linkedin.com/in/michaelannedye" target="_blank" rel="noopener">here</a>.</p>
 			</div><!-- .entry-content -->
 
+
+					<p>Mailing address:<br>
+			School of Information at the University of Michigan<br>
+			105 S State St.<br>
+			Ann Arbor, MI 48109</p>
+			<p>Email: mmtd (at) umich (dot) edu</p>
+			<p>Connect with me on Twitter at <a href="http://twitter.com/michaelannedye" target="_blank" rel="noopener">@michaelannedye</a></p>
+			<p>View my LinkedIn profile <a href="https://www.linkedin.com/in/michaelannedye" target="_blank" rel="noopener">here</a>.</p>
+						</div><!-- .entry-content -->
+
+
+								<p>Mailing address:<br>
+						School of Information at the University of Michigan<br>
+						105 S State St.<br>
+						Ann Arbor, MI 48109</p>
+						<p>Email: mmtd (at) umich (dot) edu</p>
+						<p>Connect with me on Twitter at <a href="http://twitter.com/michaelannedye" target="_blank" rel="noopener">@michaelannedye</a></p>
+						<p>View my LinkedIn profile <a href="https://www.linkedin.com/in/michaelannedye" target="_blank" rel="noopener">here</a>.</p>
+									</div><!-- .entry-content -->
+
+
+
 	<footer class="entry-footer">
 			</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
@@ -85,12 +106,31 @@ Ann Arbor, MI 48109</p>
 	</div><!-- #content -->
 
 	<div class="footer-wrap clear">
-
 		<footer id="colophon" class="site-footer" role="contentinfo">
-
 		</footer><!-- #colophon -->
-
 	</div><!-- .footer-wrap -->
 
-</div><!-- #page -->
 
+</div><!-- #page -->
+</body>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("site-navigation");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	} else {
+		navbar.classList.remove("sticky");
+	}
+}
+</script>
+</html>
