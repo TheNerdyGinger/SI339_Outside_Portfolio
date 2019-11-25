@@ -11,6 +11,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    font-family: "Open Sans", serif;
+    color: #004E89;
   }
   nav a:hover, a:hover{
     font-weight: bold;
