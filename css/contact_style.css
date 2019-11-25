@@ -1,0 +1,87 @@
+body {
+  font-family: "Open Sans", serif;
+}
+
+.skip {
+  background: white;
+  left: 0px;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+  position: absolute;
+  transition: none;
+  left:0px;
+  top:0px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  flex: 0 0 100%;
+  overflow: hidden;
+  background-color: #EFEFD0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+/* Navbar links */
+.nav-menu a {
+  display: flex;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  justify-content: right;
+}
+
+/* Page content */
+.content-area {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content-area {
+  padding-top: 60px;
+}
+
+header {
+  background-image: url("../images/color.jpg")
+  height: 400px;
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: none !important;
+    transition: none !important;
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
