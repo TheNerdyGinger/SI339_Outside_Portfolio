@@ -12,6 +12,10 @@
     align-items: center;
     margin: 0;
   }
+  nav a:hover, a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+  }
 
   /* Navbar links */
   .nav-menu a {
@@ -32,7 +36,7 @@
   .sticky + .content-area {
     padding-top: 60px;
   }
-  
+
   .skip a{
     background: white;
     left: 0;
