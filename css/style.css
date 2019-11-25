@@ -1,5 +1,38 @@
   /* This is our main stylesheet */
   /* Mobile view*/
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    flex: 0 0 100%;
+    overflow: hidden;
+    background-color: #EFEFD0;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  /* Navbar links */
+  .nav-menu a {
+    display: flex;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    justify-content: right;
+  }
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content-area {
+    padding-top: 60px;
+  }
+  
   .skip a{
     background: white;
     left: 0;
