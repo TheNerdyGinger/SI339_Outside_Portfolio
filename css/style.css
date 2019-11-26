@@ -27,6 +27,10 @@
     text-decoration: none;
     justify-content: right;
   }
+  .home-page{
+    margin:1em;
+    font-family: "Open Sans", serif;
+  }
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
   .sticky {
     position: fixed;
