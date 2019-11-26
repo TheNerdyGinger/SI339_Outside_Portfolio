@@ -4,7 +4,7 @@
 html{
     scroll-behavior: smooth;
 }
-h1{
+/* h1{
   font-family: Open Sans, sans-serif;
   text-align: center;
   color: #004E89;
@@ -19,7 +19,7 @@ h2{
   font-size: 28px;
   margin-top: 40px;
 
-}
+} */
 #footer_div{
   grid-column: 1/-1;
   grid-row: 10/auto;
@@ -27,7 +27,6 @@ h2{
 
 body{
   background-color: #EFEFD0;
-  margin-top: 40px;
 
 }
 a {
@@ -82,7 +81,6 @@ a {
 
 }
 
-
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -115,9 +113,18 @@ p{
   grid-row: 8/9;
 }
 
-.aboutme{
-  grid-column: 2/4;
+.about-title{
+  grid-column: 1/4;
   grid-row: 3/4;
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+  color: #004E89;
+  font-size: 28px;
+  margin-top: 40px;
+  /* font-size: 3rem;
+  margin-top: 10px; */
+  /* font-family: Open Sans, sans-serif;
+  color: #004E89; */
 }
 
 .site-title{
@@ -129,19 +136,10 @@ p{
   grid-column: 1/-1;
   grid-row: 2/3;
 }
+.footer_info{
+  color: #EFEFD0;
+}
 
-.textbox2{
-  background-color: #F7C59F;
-  opacity: .65;
-  text-align: left;
-  border: 20px solid #1A659E;
-}
-.textbox3{
-  background-color: #F7C59F;
-  opacity: .65;
-  text-align: center;
-  border: 8px solid #1A659E;
-}
 
 /* Tablet */
 @media screen and (min-width: 700px){

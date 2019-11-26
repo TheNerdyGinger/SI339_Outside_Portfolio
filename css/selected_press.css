@@ -4,7 +4,7 @@
 html{
     scroll-behavior: smooth;
 }
-h1{
+/* h1{
   font-family: Open Sans, sans-serif;
   text-align: center;
   color: #004E89;
@@ -19,7 +19,7 @@ h2{
   font-size: 28px;
   margin-top: 40px;
 
-}
+} */
 #footer_div{
   grid-column: 1/-1;
   grid-row: 10/auto;
@@ -27,7 +27,6 @@ h2{
 
 body{
   background-color: #EFEFD0;
-  margin-top: 40px;
 
 }
 a {
@@ -41,7 +40,6 @@ a {
   top:-40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
-
   z-index: 1;
 }
 
@@ -83,6 +81,10 @@ a {
 
 }
 
+.footer_info{
+  color: #EFEFD0;
+}
+
 
 
 .container {
@@ -99,7 +101,6 @@ p{
   font-size: 1.2em;
 }
 
-
 .presstext{
   grid-column: 1/-1;
   grid-row: 8/9;
@@ -113,9 +114,14 @@ p{
   grid-column: 1/-1;
   grid-row: 2/3;
 }
-.selectedtitle{
+.selected-title{
   grid-column: 2/4;
   grid-row: 3/4;
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+  color: #004E89;
+  font-size: 28px;
+  margin-top: 40px;
 }
 
 
