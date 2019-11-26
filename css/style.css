@@ -26,6 +26,8 @@
     text-align: center;
     text-decoration: none;
     justify-content: right;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .home-page, .page{
     margin:1em;
@@ -89,9 +91,9 @@
     width: 50px;
     justify-self: center;
   }
-  a, a:visited{
+  /* a, a:visited{
     color: inherit;
-  }
+  } */
   /* Tablet */
 
 @media screen and (min-width: 700px){
