@@ -60,6 +60,19 @@ body {
 }
 
 header {
+  display: inline-block;
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url("../images/color-header.jpg");
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 100%;                /* Parallax effect */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-bg {
   background-image: url("../images/color.jpg")
   height: 400px;
 }
