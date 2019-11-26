@@ -1,4 +1,4 @@
-/* This is our main stylesheet */
+/* Style for index.html
 /* Mobile view*/
 body{
   color: #004e89;
@@ -8,52 +8,30 @@ body{
   font-size: 3rem;
   margin-top: 10px;
 }
-.home-page{
-  margin:1em;
-  font-family: "Open Sans", serif;
-
-}
-.site-branding h1 {
-
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 32px;
-    /* vertical-align: middle; */
-    padding-top:1em;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-.site-branding h2 {
-
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 28px;
-    padding:1em;
-    padding-bottom: 2.15em;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* vertical-align: middle; */
-}
 .site-branding{
-  min-height: 200px;
+  min-height: 300px;
   line-height: 40px;
-  background: url("../images/header.jpg") repeat 0 0;
+  background-repeat: no-repeat;
+  background: url("../images/header-edit.jpg") repeat 0 0;
   margin:0;
   background-attachment: fixed;
   background-size: 100%;
   background-position: top center;
   align-items: center;
-
 }
-.header-bg{
-
+h2{
+  font-family: Open Sans, sans-serif;
+  text-align: left;
+  color: #004E89;
+  font-size: 28px;
+  margin-top: 40px;
 }
 #michaelanne_home_img{
   width: 35vw;
   display: inline;
   float: left;
   margin-right: 1.25em;
-  /* margin-left: 1.25em; */
+
   margin-bottom: 0.1em;
 }
 .home-content p{
@@ -71,11 +49,12 @@ body{
   margin-right:.5em;
   text-rendering: optimizeLegibility;
 }
+
 .skip_t a{
   background: white;
   left: 0;
   padding: 6px;
-  position: absolute;
+  position: fixed;
   top:-40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
@@ -84,7 +63,7 @@ body{
 }
 
 .skip_t a:focus{
-  top:40px;
+  top:0px;
 }
 .skip_t{
   left: 0;
@@ -106,6 +85,34 @@ body{
 #twitter-desktop{
   display:none;
 }
+footer{
+  display: inline-block;
+  position: sticky;
+  left: 0;
+  height: 20%;
+  width: 100%;
+  color: white;
+  background-color: #333;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+i {
+  color: white;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 15%;
+  margin-left: 15px;
+  object-fit: contain;
+}
+/* .header-bg {
+  background-image: url("../images/color.jpg");
+  height: 400px;
+} */
 
 
 /* Tablet */
