@@ -26,6 +26,8 @@
     text-align: center;
     text-decoration: none;
     justify-content: right;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .home-page{
     margin:1em;
