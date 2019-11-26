@@ -27,7 +27,7 @@
     text-decoration: none;
     justify-content: right;
   }
-  .home-page{
+  .home-page, .page{
     margin:1em;
     font-family: "Open Sans", serif;
   }
