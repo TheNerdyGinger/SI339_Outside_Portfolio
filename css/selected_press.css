@@ -26,11 +26,11 @@ h2{
 }
 
 body{
-  background-color: #EFEFD0;
+  background-color: #FFFF;
 
 }
 a {
-  color: #FF6B35;
+  color: #bf4c22;
 }
 .skip a{
   background: white;
@@ -50,25 +50,6 @@ a {
   border: solid 2px red;
 }
 
-.site-branding h1 {
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 32px;
-    /* vertical-align: middle; */
-    padding-top:1em;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-.site-branding h2 {
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 28px;
-    padding:1em;
-    padding-bottom: 2.15em;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* vertical-align: middle; */
-}
 .site-branding{
   min-height: 300px;
   line-height: 40px;
@@ -82,35 +63,6 @@ a {
 
 }
 
-
-/* Footer Style */
-footer{
-  display: inline-block;
-  position: sticky;
-  left: 0;
-  height: 20%;
-  width: 100%;
-  color: white;
-  background-color: #333;
-  font-size: 50px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-}
-
-i {
-  color: white;
-  padding: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 15%;
-  margin-left: 15px;
-  object-fit: contain;
-}
-
-
-
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -119,7 +71,7 @@ i {
 }
 p{
   font-family: Open Sans, sans-serif;
-  color: #004E89;
+  color: #333;
   padding: 20px;
   line-height: normal;
   font-size: 1.2em;
@@ -143,7 +95,7 @@ p{
   grid-row: 3/4;
   font-family: Open Sans, sans-serif;
   text-align: center;
-  color: #004E89;
+  color: #333;
   font-size: 28px;
   margin-top: 40px;
 }
