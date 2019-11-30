@@ -1,26 +1,26 @@
 /* Style for index.html
 /* Mobile view*/
 body{
-  color: #004e89;
-  background-color: #EFEFD0;
+  color: black;
+  background-color: #FFFF;
 }
 .entry-title{
   font-size: 3rem;
   margin-top: 10px;
 }
 .site-branding{
-  min-height: 300px;
-  line-height: 40px;
+  min-height: 100px;
+  background-image: url("../images/header-edit.jpg");
   background-repeat: no-repeat;
-  background: url("../images/header-edit.jpg") repeat 0 0;
   margin:0;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: 100%;
-  background-position: top center;
+  background-position: center;
   align-items: center;
 }
+
 h2{
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: left;
   color: #004E89;
   font-size: 28px;
@@ -139,6 +139,9 @@ i {
   #twitter-desktop{
     display:none;
   }
+  .site-branding{
+    min-height: 200px;
+  }
 
 }
 
@@ -152,6 +155,10 @@ i {
   }
   #twitter-desktop{
     display:block;
+  }
+  .site-branding{
+    min-height: 300px;
+
   }
 }
 /* Reduce motion */
