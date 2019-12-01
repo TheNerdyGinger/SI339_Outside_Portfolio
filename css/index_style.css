@@ -18,10 +18,17 @@ body{
   background-position: center;
   align-items: center;
 }
-
+.current{
+  background-color: #004E89;
+  padding-top:30px;
+  padding-bottom:30px;
+  font-style: italic;
+  font-weight: bold;
+  border: solid 3px navy;
+}
 h2{
   font-family: "Open Sans", sans-serif;
-  text-align: left;
+  margin: 1em;
   color: #004E89;
   font-size: 28px;
   margin-top: 40px;
