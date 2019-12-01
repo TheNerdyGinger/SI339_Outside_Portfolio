@@ -13,11 +13,7 @@
 	<div id="page" class="hfeed site">
 		<div class="skip"><a  href="#content">Skip to content</a></div>
 
-	<div class="header-bg">
-
-	</div><!-- .header-bg -->
 	<div class="stick">
-
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
 			<div class="nav-container">
 			<ul id="nav-list" class="nav-menu" aria-expanded="false">
@@ -30,61 +26,47 @@
 			</ul>
 		</div>
 	</nav>
-
 	</div><!-- .sticky -->
+	<div class="header-bg">
+		<div class="site-branding">
+			<span class="background-image" role="img" aria-label="Michaelanne Dye"> </span>
+		</div><!-- .site-branding -->
+	</div><!-- .header-bg -->
 
-
-	<header id="masthead" class="site-header" role="banner">
-
-	</header><!-- .row #masthead -->
-
-	<div id="content" class="site-content">
 <div id="primary" class="content-area">
 
 <main id="main" class="site-main" role="main">
+	<div class="container">
 	<div class="entry-content">
 
-		<p>Mailing address:<br>
-School of Information at the University of Michigan<br>
+		<h3>Mailing address:</h3>
+<p>School of Information at the University of Michigan<br>
 105 S State St.<br>
 Ann Arbor, MI 48109</p>
-<p>Email: mmtd (at) umich (dot) edu</p>
-<p>Connect with me on Twitter at <a href="http://twitter.com/michaelannedye" target="_blank" rel="noopener">@michaelannedye</a></p>
-<p>View my LinkedIn profile <a href="https://www.linkedin.com/in/michaelannedye" target="_blank" rel="noopener">here</a>.</p>
+<p>Email: mmtd@umich.edu</p>
+<p>Please fill out the form below to get in contact, or connect with me on Twitter <a href="http://twitter.com/michaelannedye" target="_blank" rel="noopener">@michaelannedye</a>.</p>
 			</div><!-- .entry-content -->
 
+			  <form action="mailto:pollockv@umich.edu">
+			    <label for="fname">First Name</label>
+			    <input type="text" id="fname" name="firstname" placeholder="Your name here">
 
-					<p>Mailing address:<br>
-			School of Information at the University of Michigan<br>
-			105 S State St.<br>
-			Ann Arbor, MI 48109</p>
-			<p>Email: mmtd (at) umich (dot) edu</p>
-			<p>Connect with me on Twitter at <a href="http://twitter.com/michaelannedye" target="_blank" rel="noopener">@michaelannedye</a></p>
-			<p>View my LinkedIn profile <a href="https://www.linkedin.com/in/michaelannedye" target="_blank" rel="noopener">here</a>.</p>
-						</div><!-- .entry-content -->
+			    <label for="lname">Last Name</label>
+			    <input type="text" id="lname" name="lastname" placeholder="Your last name here">
 
+			    <label for="subject">Message</label>
+			    <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
 
-								<p>Mailing address:<br>
-						School of Information at the University of Michigan<br>
-						105 S State St.<br>
-						Ann Arbor, MI 48109</p>
-						<p>Email: mmtd (at) umich (dot) edu</p>
-						<p>Connect with me on Twitter at <a href="http://twitter.com/michaelannedye" target="_blank" rel="noopener">@michaelannedye</a></p>
-						<p>View my LinkedIn profile <a href="https://www.linkedin.com/in/michaelannedye" target="_blank" rel="noopener">here</a>.</p>
-									</div><!-- .entry-content -->
+			    <input type="submit" value="Submit">
+			  </form>
+			</div>
 
-
-
-	<footer class="entry-footer">
-			</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
 
 	</main><!-- #main -->
 
 </div><!-- #primary -->
-
-</div><!-- #secondary -->
 
 	</div><!-- #content -->
 </div><!-- #home-page -->
@@ -102,15 +84,11 @@ Ann Arbor, MI 48109</p>
 </body>
 
 <script>
-// When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
-
 // Get the navbar
 var navbar = document.getElementById("site-navigation");
-
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
-
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
 	if (window.pageYOffset >= sticky) {
@@ -119,5 +97,14 @@ function myFunction() {
 		navbar.classList.remove("sticky");
 	}
 }
+
+if (navigator.userAgent.match(/Mobile/)) {
+document.getElementById('about me').innerHTML = 'About';
+}
+
+if (navigator.userAgent.match(/Mobile/)) {
+document.getElementById('selected press').innerHTML = 'Press';
+}
 </script>
 </html>
+
