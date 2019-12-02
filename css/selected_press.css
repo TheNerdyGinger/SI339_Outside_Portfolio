@@ -65,13 +65,7 @@ h2{
   background-position: center;
   align-items: center;
 }
-.current a {
-    background-color: #FF6B35;
-    padding: 10px;
-    color: white !important;
-    border: 1px solid #FF6B35;
-    border-radius: 5px;
-}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
