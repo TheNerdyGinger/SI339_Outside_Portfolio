@@ -163,14 +163,9 @@
   /* HOME PAGE / INDEX.HTML ONLY */
 
 
-  .home-branding {
+  #home-branding {
     background-image: url("../images/color-header.jpg");
-    background-repeat: no-repeat;
-    margin:0;
     background-attachment: fixed;
-    background-size: 100%;
-    background-position: center;
-    align-items: center;
   }
 
   /* paragraph settings for home page */
