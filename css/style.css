@@ -79,6 +79,9 @@
     transition: top 1s ease-out;
     z-index: 1;
   }
+  a {
+    color: #bf4c22;
+  }
 
   .skip a:focus{
     top:0;
@@ -102,6 +105,14 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
+  }
+
+  p{
+    font-family: Open Sans, sans-serif;
+    color: #333;
+    padding: 20px;
+    line-height: normal;
+    font-size: 1.2em;
   }
 
   i {
