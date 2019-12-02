@@ -166,7 +166,13 @@
   #home-branding {
     background-image: url("../images/color-header.jpg");
     background-attachment: fixed;
-    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    min-height: 100px;
+    margin: 0;
+    align-items: center;
+    height: 650px;
   }
 
   /* paragraph settings for home page */
