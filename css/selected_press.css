@@ -4,22 +4,7 @@
 html{
     scroll-behavior: smooth;
 }
-/* h1{
-  font-family: Open Sans, sans-serif;
-  text-align: center;
-  color: #004E89;
-  font-size: 32px;
 
-}
-
-h2{
-  font-family: Open Sans, sans-serif;
-  text-align: center;
-  color: #004E89;
-  font-size: 28px;
-  margin-top: 40px;
-
-} */
 #footer_div{
   grid-column: 1/-1;
   grid-row: 10/auto;
@@ -50,7 +35,15 @@ a {
   border: solid 2px red;
 }
 
-.site-branding{
+h2{
+  font-family: "Open Sans", sans-serif;
+  margin: 1em;
+  color: #333;
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+/* .site-branding{
   min-height: 300px;
   line-height: 40px;
   background-repeat: no-repeat;
@@ -61,8 +54,24 @@ a {
   background-position: top center;
   align-items: center;
 
+} */
+.site-branding{
+  min-height: 150px;
+  background-image: url("../images/header-edit.jpg");
+  background-repeat: no-repeat;
+  margin:0;
+  background-attachment: scroll;
+  background-size: 100%;
+  background-position: center;
+  align-items: center;
 }
-
+.current a {
+    background-color: #FF6B35;
+    padding: 10px;
+    color: white !important;
+    border: 1px solid #FF6B35;
+    border-radius: 5px;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -90,14 +99,10 @@ p{
   grid-column: 1/-1;
   grid-row: 2/3;
 }
+
 .selected-title{
   grid-column: 2/4;
   grid-row: 3/4;
-  font-family: Open Sans, sans-serif;
-  text-align: center;
-  color: #333;
-  font-size: 28px;
-  margin-top: 40px;
 }
 
 
