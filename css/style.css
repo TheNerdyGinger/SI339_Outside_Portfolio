@@ -1,5 +1,18 @@
   /* This is our main stylesheet */
   /* Mobile view*/
+
+  /* Header image at top of site */
+  .site-branding{
+    min-height: 150px;
+    background-image: url("../images/header-thin-centered.jpg");
+    background-repeat: no-repeat;
+    margin:0;
+    background-attachment: scroll;
+    background-size: 100%;
+    background-position: center;
+    align-items: center;
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: row;
