@@ -17,24 +17,7 @@ html{
   grid-template-rows: 30px auto auto auto auto auto auto auto auto 100px;
 }
 
-.publicationstext{
-  grid-column: 1/-1;
-  grid-row: 8/9;
-}
-.site-title{
-  grid-column: 1/-1;
-  grid-row: 1/2;
-}
 
-.site-description{
-  grid-column: 1/-1;
-  grid-row: 2/3;
-}
-
-.publications-title{
-  grid-column: 2/4;
-  grid-row: 3/4;
-}
 
 /* Accordian Links - Gallery Page */
 .accordion {
