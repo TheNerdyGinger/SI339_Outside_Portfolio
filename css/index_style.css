@@ -8,7 +8,7 @@ body{
   font-size: 3rem;
   margin-top: 10px;
 }
-.site-branding{
+/* .site-branding{
   min-height: 150px;
   background-image: url("../images/header-thin-centered.jpg");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body{
   background-size: 100%;
   background-position: center;
   align-items: center;
-}
+} */
 /* .current{
   background-color: #004E89;
   padding-top:30px;
