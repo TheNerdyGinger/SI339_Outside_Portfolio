@@ -92,7 +92,7 @@ body{
 #twitter-desktop{
   display:none;
 }
-footer{
+/* footer{
   display: inline-block;
   position: sticky;
   left: 0;
@@ -116,10 +116,7 @@ i {
   margin-left: 15px;
   object-fit: contain;
 }
-/* .header-bg {
-  background-image: url("../images/color.jpg");
-  height: 400px;
-} */
+ */
 
 
 /* Tablet */
@@ -146,21 +143,6 @@ i {
   #twitter-desktop{
     display:none;
   }
-  .site-branding{
-    min-height: 200px;
-  }
-  i {
-    color: white;
-    width: 10px;
-    padding: 10px;
-}
-
-  footer {
-    font-size: 24px;
-    height: 40px;
-    text-align: left;
-  }
-
 }
 
 /* Desktop */
@@ -173,10 +155,6 @@ i {
   }
   #twitter-desktop{
     display:block;
-  }
-  .site-branding{
-    min-height: 300px;
-
   }
 }
 /* Reduce motion */
