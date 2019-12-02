@@ -80,5 +80,55 @@ p{
   font-size: 1.2em;
 }
 
+.publicationstext{
+  grid-column: 1/-1;
+  grid-row: 8/9;
+}
+.site-title{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.site-description{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+.publications-title{
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 700px){
+  #michaelanne_home_img{
+    max-width: 150px;
+  }
+  .home-content{
+    display:grid;
+  }
+  #home-paragraphs{
+    grid-column: 1/ span 1;
+  }
+
+
+}
+
+/* Desktop */
+@media screen and (min-width: 900px){
+  .publicationstext{
+    grid-column: 2/4;
+    grid-row: 9/10;
+  }
+
+}
+
+/* Reduce motion */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+}
 
 
