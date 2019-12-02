@@ -1,5 +1,18 @@
   /* This is our main stylesheet */
   /* Mobile view*/
+
+  /* Header image at top of site */
+  .site-branding{
+    min-height: 150px;
+    background-image: url("../images/header-thin1.jpg");
+    background-repeat: no-repeat;
+    margin:0;
+    background-attachment: scroll;
+    background-size: 100%;
+    background-position: center;
+    align-items: center;
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: row;
@@ -14,11 +27,20 @@
     font-family: "Open Sans", serif;
     color: #004E89;
   }
-  nav a:hover, a:hover{
+  a:hover{
     font-weight: bold;
     text-decoration: underline;
   }
-
+  /* How navbar indicates the current page */
+  .current a {
+    background-color: #595959;
+    padding: 10px;
+    color: white !important;
+    border: 1px solid #595959;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
   /* Navbar links */
   .nav-menu a {
     display: flex;
@@ -30,16 +52,40 @@
     padding-right: 40px;
   }
 
-  /* How navbar indicates the current page */
-  .current a {
-    background-color: #595959;
-    padding: 10px;
-    color: white !important;
-    border: 1px solid #595959;
-    border-radius: 5px;
-    font-style: italic;
+  .nav-menu a:hover {
     font-weight: bold;
-}
+    text-decoration: underline;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+
+  h2{
+    font-family: "Open Sans", sans-serif;
+    margin: 1em;
+    color: #333;
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
   .home-page, .page{
     margin:1em;
     font-family: "Open Sans", serif;
@@ -66,12 +112,15 @@
     transition: top 1s ease-out;
     z-index: 1;
   }
+  a {
+    color: #bf4c22;
+  }
 
   .skip a:focus{
     top:0;
   }
   *:focus{
-    border: solid 2px red;
+    border: solid 2px white;
   }
   .page{
     min-height: calc(100vh - 100px);
@@ -91,6 +140,14 @@
 
   }
 
+  p{
+    font-family: Open Sans, sans-serif;
+    color: #333;
+    padding: 20px;
+    line-height: normal;
+    font-size: 1.2em;
+  }
+
   i {
     color: white;
     padding: 10px;
@@ -100,12 +157,66 @@
     margin-left: 15px;
     object-fit: contain;
   }
-  /* a, a:visited{
-    color: inherit;
-  } */
+  /* About Page */
+
+  #footer_div{
+    grid-column: 1/-1;
+    grid-row: 10/auto;
+  }
+    /* About Page */
+
+  body{
+    background-color: #FFFF;
+
+  }
+
+  .container1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+    grid-template-rows: 30px auto auto auto auto auto auto auto auto 100px;
+  }
+
+  .wedding-image{
+    grid-column: 2/4;
+    grid-row: 4/5;
+
+  }
+  .newstext{
+    grid-column: 1/-1;
+    grid-row: 9/10;
+  }
+  .abouttext{
+    grid-column: 1/-1;
+    grid-row: 7/8;
+  }
+  .newstitle{
+    grid-column: 2/4;
+    grid-row: 8/9;
+  }
+
+  .about-title{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    font-family: Open Sans, sans-serif;
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  .site-branding{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+
+
+
   /* Tablet */
 
 @media screen and (min-width: 700px){
+    /* About Page */
   #footer_div{
     grid-template-rows: 1fr;
     min-height:80px;
@@ -114,7 +225,15 @@
   .site-branding{
     min-height: 200px;
   }
-
+  #michaelanne_home_img{
+    max-width: 150px;
+  }
+  .home-content{
+    display:grid;
+  }
+  #home-paragraphs{
+    grid-column: 1/ span 1;
+  }
 }
 
 /* Desktop */
@@ -129,6 +248,29 @@
     font-size: 24px;
     height: 40px;
     text-align: left;
+  }
+    /* About Page */
+  .wedding-image{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-left: 60px;
+    margin-top: 25px;
+
+  }
+  .newstitle{
+    grid-column: 2/4;
+    grid-row: 8/9;
+  }
+
+  .newstext{
+    grid-column: 1/4;
+    grid-row: 9/10;
+    margin-left: 60px;
+  }
+  .abouttext{
+    grid-column: 2/5;
+    grid-row: 4/5;
+    margin-right: 40px;
   }
 
 }
