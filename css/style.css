@@ -1,6 +1,7 @@
   /* This is our main stylesheet */
   /* Mobile view*/
 
+  /* COMMON FOR EVERY PAGE */
   /* Header image at top of site */
   .site-branding{
     min-height: 150px;
@@ -21,7 +22,7 @@
     overflow: hidden;
     background-color: #333;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
     font-family: "Open Sans", serif;
@@ -119,8 +120,17 @@
   .skip a:focus{
     top:0;
   }
+
   *:focus{
     border: solid 2px white;
+  }
+
+  p{
+    font-family: Open Sans, sans-serif;
+    color: #333;
+    padding: 20px;
+    line-height: normal;
+    font-size: 1.2em;
   }
   .page{
     min-height: calc(100vh - 100px);
@@ -140,14 +150,6 @@
 
   }
 
-  p{
-    font-family: Open Sans, sans-serif;
-    color: #333;
-    padding: 20px;
-    line-height: normal;
-    font-size: 1.2em;
-  }
-
   i {
     color: white;
     padding: 10px;
@@ -157,7 +159,96 @@
     margin-left: 15px;
     object-fit: contain;
   }
-  /* About Page */
+
+  /* HOME PAGE / INDEX.HTML ONLY */
+
+
+  .home-branding {
+    background-image: url("../images/header-thin1.jpg");
+    background-repeat: no-repeat;
+    margin:0;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    align-items: center;
+  }
+
+  /* paragraph settings for home page */
+  .home-content p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin-bottom: 1.5em;
+    margin-left: .5em;
+    margin-right:.5em;
+    text-rendering: optimizeLegibility;
+  }
+  #michaelanne_home_img{
+    width: 35vw;
+    display: inline;
+    float: left;
+    margin-right: 1.25em;
+    margin-bottom: 0.1em;
+  }
+  .home-content p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin-bottom: 1.5em;
+    margin-left: .5em;
+    margin-right:.5em;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .skip_t a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: fixed;
+    top:-40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    width: 150px;
+  }
+  
+  .skip_t a:focus{
+    top:0px;
+  }
+  .skip_t{
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top:-40px;
+  }
+  
+  .twitter_div{
+    margin-left: .5em;
+    margin-right:.5em;
+  }
+  #twitter-mobile{
+    display:block;
+  }
+  #twitter-tablet{
+    display:none;
+  }
+  #twitter-desktop{
+    display:none;
+  }
+
+  /* ABOUT PAGE ONLY*/
 
   #footer_div{
     grid-column: 1/-1;
@@ -205,12 +296,10 @@
     margin-top: 40px;
   }
 
-  .site-branding{
-    grid-column: 1/-1;
-    grid-row: 1/2;
-  }
 
-/* Accordian Links - Gallery Page */
+
+  /* PUBLICATIONS PAGE ONLY */
+/* Accordian Links - Publications */
 .accordion {
   background-color: #eee;
   color: #444;
@@ -242,12 +331,60 @@
 /* End Accordian Links */
 
 
+/* CONTACT PAGE ONLY */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #505050;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #333;
+}
 
 
   /* Tablet */
 
 @media screen and (min-width: 700px){
-    /* About Page */
+  /* HOME PAGE */
+  #michaelanne_home_img{
+    max-width: 150px;
+  }
+  .home-content{
+    display:grid;
+  }
+  #home-paragraphs{
+    grid-column: 1/ span 1;
+  }
+  .twitter_div{
+    grid-column: 2/span 1;
+  }
+
+  #twitter-mobile{
+    display:none;
+  }
+  #twitter-tablet{
+    display:block;
+  }
+  #twitter-desktop{
+    display:none;
+  }
+
+    /* ABOUT PAGE */
   #footer_div{
     grid-template-rows: 1fr;
     min-height:80px;
@@ -269,6 +406,7 @@
 
 /* Desktop */
 @media screen and (min-width: 900px){
+  /* COMMON FOR ALL PAGES */
   .site-branding{
     min-height: 300px;
   }
@@ -283,7 +421,18 @@
     height: 40px;
     text-align: left;
   }
-    /* About Page */
+  /* HOME PAGE ONLY */
+  #twitter-mobile{
+    display:none;
+  }
+  #twitter-tablet{
+    display:none;
+  }
+  #twitter-desktop{
+    display:block;
+  }
+
+    /* ABOUT PAGE ONLY */
   .wedding-image{
     grid-column: 1/2;
     grid-row: 4/5;
@@ -310,6 +459,7 @@
 
 }
 @media screen and (min-width: 1300px){
+  /* COMMON FOR ALL PAGES */
   .site-branding{
     min-height: 350px;
   }
@@ -317,6 +467,7 @@
 
 /* Reduce motion */
 @media screen and (prefers-reduced-motion: reduce){
+  /* COMMON FOR ALL PAGES */
   html{
       scroll-behavior: auto; /* Removes scroll animation */
   }
@@ -326,5 +477,11 @@
   }
   .site-branding{
     min-height: 300px;
+  }
+
+  /* HOME PAGE ONLY */
+  .skip_t a{
+    -webkit-transition: default;
+    transition: default;
   }
 }
