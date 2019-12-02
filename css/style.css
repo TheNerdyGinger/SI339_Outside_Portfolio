@@ -283,6 +283,7 @@
     min-height: 350px;
   }
 }
+
 /* Reduce motion */
 @media screen and (prefers-reduced-motion: reduce){
   html{
