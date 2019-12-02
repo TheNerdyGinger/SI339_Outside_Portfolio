@@ -4,7 +4,7 @@
   /* Header image at top of site */
   .site-branding{
     min-height: 150px;
-    background-image: url("../images/header-thin-centered.jpg");
+    background-image: url("../images/header-thin1.jpg");
     background-repeat: no-repeat;
     margin:0;
     background-attachment: scroll;
@@ -60,6 +60,14 @@
     backface-visibility: hidden;
   }
 
+  h2{
+    font-family: "Open Sans", sans-serif;
+    margin: 1em;
+    color: #333;
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
 
   @keyframes shake {
     10%, 90% {
@@ -112,7 +120,7 @@
     top:0;
   }
   *:focus{
-    border: solid 2px red;
+    border: solid 2px white;
   }
   .page{
     min-height: calc(100vh - 100px);
@@ -151,7 +159,7 @@
   }
   /* About Page */
 
-  
+
   /* Tablet */
 
 @media screen and (min-width: 700px){
