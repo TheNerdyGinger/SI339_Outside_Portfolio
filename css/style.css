@@ -486,10 +486,20 @@ input[type=submit]:hover {
   .site-branding{
     min-height: 300px;
   }
+  
+  .nav-menu a:hover {
+    animation: none !important;
+  }
 
   /* HOME PAGE ONLY */
   .skip_t a{
     -webkit-transition: default;
     transition: default;
   }
+  /* PUBLICATIONS PAGE ONLY */
+    
+  .panel {
+    transition: none !important;
+  }
+
 }
