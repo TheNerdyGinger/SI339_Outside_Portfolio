@@ -29,6 +29,17 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  /* How navbar indicates the current page */
+  .current a {
+    background-color: #595959;
+    padding: 10px;
+    color: white !important;
+    border: 1px solid #595959;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
   .home-page, .page{
     margin:1em;
     font-family: "Open Sans", serif;
@@ -100,7 +111,9 @@
     min-height:80px;
     grid-template-columns: auto auto auto auto auto auto;
   }
-
+  .site-branding{
+    min-height: 200px;
+  }
 
 }
 
@@ -129,5 +142,7 @@
     -webkit-transition: default;
     transition: default;
   }
-
+  .site-branding{
+    min-height: 300px;
+  }
 }
