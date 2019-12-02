@@ -161,6 +161,18 @@
   }
 
   /* HOME PAGE / INDEX.HTML ONLY */
+
+
+  .home-branding {
+    background-image: url("../images/header-thin1.jpg");
+    background-repeat: no-repeat;
+    margin:0;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    align-items: center;
+  }
+
   /* paragraph settings for home page */
   .home-content p{
     display: block;
@@ -319,6 +331,30 @@
 /* End Accordian Links */
 
 
+/* CONTACT PAGE ONLY */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #505050;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #333;
+}
 
 
   /* Tablet */
