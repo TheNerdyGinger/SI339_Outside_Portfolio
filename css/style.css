@@ -60,7 +60,13 @@
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
   }
-
+  h1{
+    font-family: "Open Sans", sans-serif;
+    margin: 1em;
+    color: #333;
+    font-size: 28px;
+    margin-top: 40px;
+  }
   h2{
     font-family: "Open Sans", sans-serif;
     margin: 1em;
@@ -104,6 +110,7 @@
   }
 
   .skip a{
+    font-family: "Open Sans", sans-serif;
     background: white;
     left: 0;
     padding: 6px;
