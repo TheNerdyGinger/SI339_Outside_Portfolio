@@ -61,12 +61,18 @@
     backface-visibility: hidden;
   }
 
+  h1{
+    font-family: "Open Sans", sans-serif;
+    margin: 1em;
+    color: #333;
+    font-size: 30px;
+  }
+
   h2{
     font-family: "Open Sans", sans-serif;
     margin: 1em;
     color: #333;
     font-size: 28px;
-    margin-top: 40px;
   }
 
 
