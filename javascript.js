@@ -28,3 +28,13 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+/* Responsive Nav Javascript */
+function responsiveNav() {
+    var x = document.getElementById("nav-list");
+    if (x.className === "nav-menu") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-menu";
+    }
+  }
