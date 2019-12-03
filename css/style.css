@@ -25,7 +25,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 0;
-    font-family: "Open Sans", serif;
+    font-family: "Open Sans", sans-serif;
     color: #004E89;
   }
   a:hover{
@@ -89,7 +89,7 @@
   }
   .home-page, .page{
     margin:1em;
-    font-family: "Open Sans", serif;
+    font-family: "Open Sans", sans-serif;
   }
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
   .sticky {
@@ -126,7 +126,7 @@
   }
 
   p{
-    font-family: Open Sans, sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #333;
     padding: 20px;
     line-height: normal;
@@ -189,6 +189,7 @@
     margin-left: .5em;
     margin-right:.5em;
     text-rendering: optimizeLegibility;
+    padding:0;
   }
   #michaelanne_home_img{
     width: 35vw;
@@ -357,6 +358,10 @@ input[type=submit]:hover {
   /* Tablet */
 
 @media screen and (min-width: 700px){
+/* COMMON WITH ALL PAGES */
+  .site-branding{
+    min-height: 200px;
+  }
   /* HOME PAGE */
   #home-branding {
     background-attachment: fixed;
@@ -391,18 +396,7 @@ input[type=submit]:hover {
     min-height:80px;
     grid-template-columns: auto auto auto auto auto auto;
   }
-  .site-branding{
-    min-height: 200px;
-  }
-  #michaelanne_home_img{
-    max-width: 150px;
-  }
-  .home-content{
-    display:grid;
-  }
-  #home-paragraphs{
-    grid-column: 1/ span 1;
-  }
+
 }
 
 /* Desktop */
