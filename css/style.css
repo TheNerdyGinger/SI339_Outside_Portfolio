@@ -110,6 +110,7 @@
   }
 
   .skip a{
+    font-family: "Open-sans", sans-serif;
     background: white;
     left: 0;
     padding: 6px;
