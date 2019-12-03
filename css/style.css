@@ -49,6 +49,10 @@
    display: block;
  }
 
+.nav-menu li:last-child {
+   display: block;
+ }
+
   .nav-menu.responsive {
     position: relative;
     float: none;
