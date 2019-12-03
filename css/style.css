@@ -36,7 +36,7 @@
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   }
-  
+
   .nav-menu li:nth-child(2),
   .nav-menu li:nth-child(3),
   .nav-menu li:nth-child(4),
@@ -80,13 +80,20 @@
   }
 
 
+  h1{
+    font-family: "Open Sans", sans-serif;
+    margin: 1em;
+    color: #333;
+    font-size: 30px;
+  }
+
   h2{
     font-family: "Open Sans", sans-serif;
     margin: 1em;
     color: #333;
     font-size: 28px;
-    margin-top: 40px;
   }
+
 
 
   @keyframes shake {
