@@ -270,8 +270,8 @@
   }
 
   .wedding-image{
-    grid-column: 2/4;
-    grid-row: 4/5;
+    grid-column: 1/-1;
+    grid-row: 3/4;
 
   }
   .newstext{
