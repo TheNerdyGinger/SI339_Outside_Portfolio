@@ -1,4 +1,4 @@
-/* about page stylesheet */
+/* Publications page stylesheet */
 /* Mobile view*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 html{
@@ -10,74 +10,11 @@ html{
   grid-row: 10/auto;
 }
 
-body{
-  background-color: #FFFF;
-
-}
-a {
-  color: #bf4c22;
-}
-.skip a{
-  background: white;
-  left: 0;
-  padding: 6px;
-  position: absolute;
-  top:-40px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
-}
-
-.skip a:focus{
-  top:0;
-}
-*:focus{
-  border: solid 2px red;
-}
-
-h2{
-  font-family: "Open Sans", sans-serif;
-  margin: 1em;
-  color: #333;
-  font-size: 28px;
-  margin-top: 40px;
-}
-
-/* .site-branding{
-  min-height: 300px;
-  line-height: 40px;
-  background-repeat: no-repeat;
-  background: url("../images/header-edit.jpg") repeat 0 0;
-  margin:0;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-position: top center;
-  align-items: center;
-
-} */
-.site-branding{
-  min-height: 150px;
-  background-image: url("../images/header-edit.jpg");
-  background-repeat: no-repeat;
-  margin:0;
-  background-attachment: scroll;
-  background-size: 100%;
-  background-position: center;
-  align-items: center;
-}
-
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 15px;
   grid-template-rows: 30px auto auto auto auto auto auto auto auto 100px;
-}
-p{
-  font-family: Open Sans, sans-serif;
-  color: #333;
-  padding: 20px;
-  line-height: normal;
-  font-size: 1.2em;
 }
 
 .publicationstext{
@@ -99,19 +36,40 @@ p{
   grid-row: 3/4;
 }
 
+/* Accordian Links - Gallery Page */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    font-size:32px;
+    transition: 0.5s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+  }
+  
+  .form {
+    background-color: white;
+  }
+  /* End Accordian Links */
+
 
 /* Tablet */
 @media screen and (min-width: 700px){
-  #michaelanne_home_img{
-    max-width: 150px;
-  }
-  .home-content{
-    display:grid;
-  }
-  #home-paragraphs{
-    grid-column: 1/ span 1;
-  }
-
 
 }
 
