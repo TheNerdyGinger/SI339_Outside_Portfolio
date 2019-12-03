@@ -165,14 +165,13 @@
 
   #home-branding {
     background-image: url("../images/color-header.jpg");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     min-height: 100px;
     margin: 0;
     align-items: center;
-    height: 650px;
+    height: 410px;
   }
 
   /* paragraph settings for home page */
@@ -271,8 +270,8 @@
   }
 
   .wedding-image{
-    grid-column: 1/-1;
-    grid-row: 3/4;
+    grid-column: 2/4;
+    grid-row: 4/5;
 
   }
   .newstext{
@@ -359,6 +358,10 @@ input[type=submit]:hover {
 
 @media screen and (min-width: 700px){
   /* HOME PAGE */
+  #home-branding {
+    background-attachment: fixed;
+    height: 650px;
+  }
   #michaelanne_home_img{
     max-width: 150px;
   }
