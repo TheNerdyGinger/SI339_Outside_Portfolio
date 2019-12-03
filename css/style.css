@@ -182,7 +182,7 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-  
+
     font-weight: normal;
     font-size: 1.2em;
     line-height: 1.7;
@@ -204,7 +204,7 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-  
+
     font-weight: normal;
     font-size: 1.2em;
     line-height: 1.7;
@@ -213,7 +213,7 @@
     margin-right:.5em;
     text-rendering: optimizeLegibility;
   }
-  
+
   .skip_t a{
     background: white;
     left: 0;
@@ -225,7 +225,7 @@
     z-index: 1;
     width: 150px;
   }
-  
+
   .skip_t a:focus{
     top:0px;
   }
@@ -235,7 +235,7 @@
     position: absolute;
     top:-40px;
   }
-  
+
   .twitter_div{
     margin-left: .5em;
     margin-right:.5em;
@@ -271,7 +271,7 @@
   }
 
   .wedding-image{
-    grid-column: 2/4;
+    grid-column: 1/-1;
     grid-row: 4/5;
 
   }
@@ -358,7 +358,7 @@ input[type=submit]:hover {
   background-color: #333;
 }
 
-.content-container {
+.contact-container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -486,10 +486,20 @@ input[type=submit]:hover {
   .site-branding{
     min-height: 300px;
   }
+  
+  .nav-menu a:hover {
+    animation: none !important;
+  }
 
   /* HOME PAGE ONLY */
   .skip_t a{
     -webkit-transition: default;
     transition: default;
   }
+  /* PUBLICATIONS PAGE ONLY */
+    
+  .panel {
+    transition: none !important;
+  }
+
 }
