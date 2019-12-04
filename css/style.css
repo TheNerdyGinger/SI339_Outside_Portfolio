@@ -139,11 +139,12 @@
     transition: top 1s ease-out;
     z-index: 1;
   }
+  a {
+    color: #a03a14;
+  }
+
   .skip a:focus{
     top:0;
-  }
-  a {
-    color: #bf4c22;
   }
 
   *:focus{
@@ -310,7 +311,7 @@
     grid-row: 4/5;
   }
   .newstitle{
-    grid-column: 1/-1;
+    grid-column: 2/3;
     grid-row: 5/6;
   }
 
@@ -374,7 +375,7 @@ input[type=submit]:hover {
   background-color: #333;
 }
 
-.content-container {
+.contact-container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
