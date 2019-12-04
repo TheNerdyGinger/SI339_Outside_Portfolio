@@ -95,7 +95,7 @@
   }
 
 
-
+  /* Animation for when nav-links are hovered over */
   @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
@@ -128,7 +128,7 @@
   .sticky + .content-area {
     padding-top: 60px;
   }
-
+/* skip to main content */
   .skip a{
     background: white;
     left: 0;
@@ -139,12 +139,11 @@
     transition: top 1s ease-out;
     z-index: 1;
   }
-  a {
-    color: #bf4c22;
-  }
-
   .skip a:focus{
     top:0;
+  }
+  a {
+    color: #bf4c22;
   }
 
   *:focus{
@@ -175,7 +174,7 @@
     padding-bottom: 10px;
 
   }
-
+  /* Font awesome icons in the footer */
   i {
     color: white;
     padding: 10px;
@@ -188,7 +187,7 @@
 
   /* HOME PAGE / INDEX.HTML ONLY */
 
-
+  /* home page large header */
   #home-branding {
     background-image: url("../images/color-header.jpg");
     background-repeat: no-repeat;
@@ -241,6 +240,7 @@
     text-rendering: optimizeLegibility;
   }
 
+  /* link to skip twitter stream */
   .skip_t a{
     background: white;
     left: 0;
@@ -252,17 +252,17 @@
     z-index: 1;
     width: 150px;
   }
-
-  .skip_t a:focus{
-    top:0px;
-  }
   .skip_t{
     left: 0;
     padding: 6px;
     position: absolute;
     top:-40px;
   }
-
+  .skip_t a:focus{
+    top:0px;
+  }
+ 
+/* The different twitter streams. Only one is visible in each screen size */
   .twitter_div{
     margin-left: .5em;
     margin-right:.5em;
@@ -283,7 +283,6 @@
     grid-column: 1/-1;
     grid-row: 10/auto;
   }
-    /* About Page */
 
   body{
     background-color: #FFFF;
@@ -492,6 +491,7 @@ input[type=submit]:hover {
     min-height: 300px;
   }
 
+  /* font awesome links shrink in larger views */
   i {
     color: white;
     width: 10px;
