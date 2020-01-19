@@ -411,16 +411,7 @@ input[type=submit]:hover {
       font-weight: bold;
       text-decoration: underline;
     }
-    /* How navbar indicates the current page */
-    .current a {
-      background-color: #595959;
-      padding: 10px;
-      color: white !important;
-      border: 1px solid #595959;
-      border-radius: 5px;
-      font-style: italic;
-      font-weight: bold;
-  }
+
     /* Navbar links */
     .nav-menu a {
       display: flex;
@@ -439,7 +430,17 @@ input[type=submit]:hover {
       transform: translate3d(0, 0, 0);
       backface-visibility: hidden;
     }
-
+    /* How navbar indicates the current page */
+    .current a {
+      background-color: #595959;
+      padding: 10px;
+      color: white !important;
+      border: 1px solid #595959;
+      border-radius: 5px;
+      font-style: italic;
+      text-decoration: underline;
+      font-weight: bold;
+  }
     .nav-menu li:nth-child(2),
     .nav-menu li:nth-child(3),
     .nav-menu li:nth-child(4),
