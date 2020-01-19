@@ -572,6 +572,26 @@ input[type=submit]:hover {
   .panel {
     transition: default;
   }
+  @keyframes shake {
+    10%, 90% {
+      -webkit-transform: none;
+      transform: none;
+    }
 
+    20%, 80% {
+      -webkit-transform: none;
+      transform: none;
+    }
+
+    30%, 50%, 70% {
+      -webkit-transform: none;
+      transform: none;
+    }
+
+    40%, 60% {
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
 
 }
