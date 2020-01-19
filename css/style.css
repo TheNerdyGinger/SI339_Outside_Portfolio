@@ -565,4 +565,13 @@ input[type=submit]:hover {
     -webkit-transition: default;
     transition: default;
   }
+  .accordion {
+    transition: default;
+  }
+  
+  .panel {
+    transition: default;
+  }
+
+
 }
