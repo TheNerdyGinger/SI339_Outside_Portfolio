@@ -331,6 +331,9 @@
   font-size:32px;
   transition: 0.5s;
 }
+.accordion:focus{
+  border: solid 2px black;
+}
 
 .active, .accordion:hover {
   background-color: #ccc;
